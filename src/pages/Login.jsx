@@ -59,8 +59,8 @@ useEffect(() => {
 
   return (
     <>
-      <div className="bg-gray-300 h-screen w-screen flex justify-center items-center">
-        <div className="bg-white p-10 w-1/2 rounded-lg">
+      <div className="bg-white h-screen w-screen flex justify-center items-center">
+        <div className="bg-black p-10 md:w-1/2 w=[90%] rounded-lg text-white">
           <div className="text-center">
             <span className="text-2xl"> ເຂົ້າສູ່ລະບົບ</span>
           </div>
@@ -73,7 +73,7 @@ useEffect(() => {
               type="text"
               placeholder="ປ້ອນຊື່ຜູ້ໃຊ້......."
               className="bg-transparent rounded-md py-3 px-4 border
-                             border-red-500 focus:outline-none w-full mt-2 mb-4"
+                             border-orange-400 focus:outline-none w-full mt-2 mb-4 text-gray-200"
             />
           </div>
 
@@ -86,7 +86,7 @@ useEffect(() => {
                 type={typePass}
                 placeholder="ປ້ອນລະຫັດຜ່ານ......."
                 className="bg-transparent rounded-md py-3 px-4 border
-                         border-red-500 focus:outline-none w-full mt-2 mb-4"
+                         border-orange-400 focus:outline-none w-full mt-2 mb-4"
               />
               {typePass == "text" ? (
                 <i
@@ -104,8 +104,8 @@ useEffect(() => {
 
           <div>
             <button
-              className="bg-black text-white p-3 w-full
-                rounded-md mt-4 text-xl cursor-pointer mb-4"
+              className="bg-orange-400 text-white p-3 w-full hover:bg-white hover:text-gray-700
+                rounded-md mt-4 text-xl cursor-pointer mb-4 font-bold"
               onClick={handleSave}
             >
               ເຂົ້າສູ່ລະບົບ{" "}
@@ -115,7 +115,7 @@ useEffect(() => {
             <span> ຖ້າຫາກຍັງບໍ່ມີບັນຊີເຂົ້າໃຊ້ ? </span>
             <Link
               to={"/register"}
-              className="text-orange-500 hover:text-orange-300"
+              className="text-orange-400 hover:text-orange-200"
             >
               ລົງທະບຽນ
             </Link>

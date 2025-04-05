@@ -71,10 +71,10 @@ function Register() {
 
   return (
     <>
-      <div className="bg-blue-200 h-screen w-screen flex justify-center items-center">
-        <div className="bg-white p-10 w-1/2 rounded-lg">
+      <div className="bg-white h-screen w-screen flex justify-center items-center">
+        <div className="bg-black p-10 md:w-1/2 w=[90%] rounded-lg text-white ">
           <div className="text-center">
-            <span className="text-2xl text-blue-500 font-bold">ລົງທະບຽນ</span>
+            <span className="text-2xl  font-bold">ລົງທະບຽນ</span>
           </div>
 
           <div>
@@ -85,7 +85,7 @@ function Register() {
               type="text"
               placeholder="ປ້ອນຊື່ ແລະ ນາມສະກຸນ......"
               className="bg-tranparent rounded-md py-3 px-4 border
-               border-red-500 focus:outline-none w-full mt-2 mb-4"
+               border-orange-400 focus:outline-none w-full mt-2 mb-4"
             />
           </div>
           <div>
@@ -96,7 +96,7 @@ function Register() {
               type="text"
               placeholder="ປ້ອນຊື່ຜູ້ໃຊ້......"
               className="bg-tranparent rounded-md py-3 px-4 border
-               border-red-500 focus:outline-none w-full mt-2 mb-4"
+               border-orange-400  focus:outline-none w-full mt-2 mb-4"
             />
           </div>
           <div>
@@ -108,7 +108,7 @@ function Register() {
                 type={typePass}
                 placeholder="ປ້ອນລະຫັດຜ່ານ......"
                 className="bg-tranparent rounded-md py-3 px-4 border
-               border-red-500 focus:outline-none w-full mt-2 mb-4"
+               border-orange-400  focus:outline-none w-full mt-2 mb-4"
               />
               {typePass == "text" ? (
                 <i
@@ -134,7 +134,7 @@ function Register() {
                 type={typeconPass}
                 placeholder="ປ້ອນລະຫັດຢືນຢັນ......"
                 className="bg-tranparent rounded-md py-3 px-4 border
-               border-red-500 focus:outline-none w-full mt-2 mb-4"
+               border-orange-400  focus:outline-none w-full mt-2 mb-4"
               />
               {typeconPass == "text" ? (
                 <i
@@ -152,7 +152,7 @@ function Register() {
 
           <div>
             <button
-              className="bg-cyan-200 hover:bg-amber-200 text-black p-3 w-full 
+              className="bg-orange-400 hover:bg-white hover:text-black p-3 w-full font-bold
             rounded-md my-4 text-xl cursor-pointer"
               onClick={handleSave}
             >
@@ -162,7 +162,7 @@ function Register() {
 
           <div className="text-center">
             <span>ຖ້າຫາກມີບັນຊີເຂົ້າໃຊ້ແລ້ວ ? </span>
-            <Link to={"/"} className="text-orange-500 hover:text-orange-300">
+            <Link to={"/"} className="text-orange-400 hover:text-orange-200">
               ເຂົ້າສູ່ລະບົບ
             </Link>
           </div>
