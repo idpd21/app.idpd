@@ -73,8 +73,14 @@ function Register() {
     <>
       <div className="bg-white h-screen w-screen flex justify-center items-center">
         <div className="bg-black p-10 md:w-1/2 w=[90%] rounded-lg text-white ">
-          <div className="text-center">
-            <span className="text-2xl  font-bold">ລົງທະບຽນ</span>
+        <div className="text-center flex text-2xl justify-center ">
+            <img src="https://png.pngtree.com/png-clipart/20240212/original/pngtree-design-of-a-plaited-hexagon-logo-in-blue-created-as-vector-png-image_14300843.png" alt=""
+            className="w-16 h-16" />
+            <span className="mt-4 text-lg">ຮ້ານຂາຍອຸປະກອນການຮຽນພັດທະນາລາວ</span>
+          </div>
+          <div className="text-center text-xl"><h2>ຍິນດີຕ້ອນຮັບ</h2></div>
+          <div>
+          <h2 className=" text-gray-500 text-center"> ກະລຸນາປ້ອນຂໍ້ມູນເພື່ອ ລົງທະບຽນ</h2>
           </div>
 
           <div>
