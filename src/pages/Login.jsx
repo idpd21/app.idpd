@@ -61,14 +61,14 @@ useEffect(() => {
     <>
       <div className="bg-white h-screen w-screen flex justify-center items-center">
         <div className="bg-black p-10 md:w-1/2 w=[90%] rounded-lg text-white">
-          <div className="text-center flex text-2xl">
+          <div className="text-center flex text-2xl justify-center ">
             <img src="https://png.pngtree.com/png-clipart/20240212/original/pngtree-design-of-a-plaited-hexagon-logo-in-blue-created-as-vector-png-image_14300843.png" alt=""
             className="w-16 h-16" />
-            <span className="">ຮ້ານຂາຍອຸປະກອນການຮຽນພັດທະນາລາວ</span>
+            <span className="mt-8 text-lg">ຮ້ານຂາຍອຸປະກອນການຮຽນພັດທະນາລາວ</span>
           </div>
-          <div className="text-center"><h1>ຍິນດີຕ້ອນຮັບ</h1></div>
+          <div className="text-center text-lg"><h1>ຍິນດີຕ້ອນຮັບ</h1></div>
           <div>
-          <h2 className="text-lg text-gray-500"> ກະລຸນາປ້ອນຂໍ້ມູນເພື່ອ ເຂົ້າສູ່ລະບົບ</h2>
+          <h2 className=" text-gray-500 text-center"> ກະລຸນາປ້ອນຂໍ້ມູນເພື່ອ ເຂົ້າສູ່ລະບົບ</h2>
           </div>
 
           <div>
