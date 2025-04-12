@@ -61,8 +61,12 @@ useEffect(() => {
     <>
       <div className="bg-white h-screen w-screen flex justify-center items-center">
         <div className="bg-black p-10 md:w-1/2 w=[90%] rounded-lg text-white">
-          <div className="text-center">
-            <span className="text-2xl"> ເຂົ້າສູ່ລະບົບ</span>
+          <div className="text-center flex">
+            <span className="text-2xl">ຮ້ານຂາຍອຸປະກອນການຮຽນພັດທະນາລາວ</span>
+            <h1>ຍິນດີຕ້ອນຮັບ</h1>
+          </div>
+          <div>
+          <h2 className="text-lg"> ກະລຸນາປ້ອນຂໍ້ມູນເພື່ອ ເຂົ້າສູ່ລະບົບ</h2>
           </div>
 
           <div>
