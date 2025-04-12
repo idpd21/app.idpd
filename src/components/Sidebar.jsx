@@ -56,24 +56,25 @@ function Sidebar({ openSidebar }) {
     <>
       {openSidebar ? (
         <div className="bg-gradient-to-b from-black to-black text-white p-6 h-full w-60 z-50">
-          <div className="text-center flex text-sm justify-center ">
+          <div className="text-center flex text-sm justify-center flex-col text-orange-400 font-bold">
             <img src="https://png.pngtree.com/png-clipart/20240212/original/pngtree-design-of-a-plaited-hexagon-logo-in-blue-created-as-vector-png-image_14300843.png" alt=""
             className="w-16 h-16" />
-            <span className="mt-4 ">ຮ້ານຂາຍອຸປະກອນການຮຽນພັດທະນາລາວ</span>
+            <span className="mt-2 ">ຮ້ານຂາຍອຸປະກອນການຮຽນ</span>
+            <h1 className="mt-2 ">ພັດທະນາລາວ</h1>
           </div>
 
-          <div className="bg-white w-full h-44 rounded-md flex flex-col justify-center items-center">
+          <div className="bg-orange-400 w-full h-44 rounded-md flex flex-col justify-center items-center">
             <div>
-              <i className="fa-solid fa-user text-3xl text-black"></i>
+              <i className="fa-solid fa-user text-3xl text-gray-200"></i>
             </div>
             <div>
-              <p className="text-2xl py-2 text-black">{user.username}</p>
+              <p className="text-2xl py-2 text-gray-200 font-bold">{user.username}</p>
             </div>
             <button
               onClick={handleLogout}
-              className="bg-white text-red-600  px-4 py-2 rounded-md hover:bg-red-500 hover:text-black cursor-pointer"
+              className="bg-red-500 text-orange-400  px-4 py-2 rounded-md hover:bg-red-100 hover:text-black cursor-pointer"
             >
-              <i className="fa-solid fa-right-to-bracket mr-2"></i> ອອກຈາກລະບົບ
+              <i className="fa-solid fa-right-to-bracket mr-2 font-bold"></i> ອອກຈາກລະບົບ
             </button>
           </div>
           <div className="p-4">
