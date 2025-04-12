@@ -55,17 +55,23 @@ function Sidebar({ openSidebar }) {
   return (
     <>
       {openSidebar ? (
-        <div className="bg-gradient-to-b from-green-800 to-green-700 text-white p-6 h-full w-60 z-50">
-          <div className="bg-green-950 w-full h-52 rounded-md flex flex-col justify-center items-center">
+        <div className="bg-gradient-to-b from-black to-black text-white p-6 h-full w-60 z-50">
+          <div className="text-center flex text-sm justify-center ">
+            <img src="https://png.pngtree.com/png-clipart/20240212/original/pngtree-design-of-a-plaited-hexagon-logo-in-blue-created-as-vector-png-image_14300843.png" alt=""
+            className="w-16 h-16" />
+            <span className="mt-4 ">ຮ້ານຂາຍອຸປະກອນການຮຽນພັດທະນາລາວ</span>
+          </div>
+
+          <div className="bg-white w-full h-44 rounded-md flex flex-col justify-center items-center">
             <div>
-              <i className="fa-solid fa-user text-5xl"></i>
+              <i className="fa-solid fa-user text-3xl text-black"></i>
             </div>
             <div>
-              <p className="text-2xl py-4">{user.username}</p>
+              <p className="text-2xl py-2 text-black">{user.username}</p>
             </div>
             <button
               onClick={handleLogout}
-              className="bg-green-900 text-red-500 px-4 py-2 rounded-md hover:bg-green-800 cursor-pointer"
+              className="bg-white text-red-600  px-4 py-2 rounded-md hover:bg-red-500 hover:text-black cursor-pointer"
             >
               <i className="fa-solid fa-right-to-bracket mr-2"></i> ອອກຈາກລະບົບ
             </button>
@@ -73,40 +79,40 @@ function Sidebar({ openSidebar }) {
           <div className="p-4">
             <ul>
               <li
-                className={`py-2 px-4 cursor-pointer text-lg hover:bg-green-400 font-bold rounded-md ${
-                  activeMenu === "/home" ? "bg-green-400" : ""
+                className={`py-2 px-4 cursor-pointer text-lg hover:bg-gray-200 hover:text-gray-800 font-bold rounded-md ${
+                  activeMenu === "/home" ? "hover:bg-gray-200 hover:text-gray-800" : ""
                 }`}
                 onClick={() => handleMenuClick("/home")}
               >
                 <i className="fa-solid fa-home mr-2"></i> ໜ້າຫຼັກ
               </li>
               <li
-                className={`py-2 px-4 cursor-pointer text-lg hover:bg-green-400 font-bold rounded-md ${
-                  activeMenu === "/store" ? "bg-green-400" : ""
+                className={`py-2 px-4 cursor-pointer text-lg hover:bg-gray-200 hover:text-gray-800 font-bold rounded-md ${
+                  activeMenu === "/store" ? "hover:bg-gray-200 hover:text-gray-800" : ""
                 }`}
                 onClick={() => handleMenuClick("/store")}
               >
                 <i className="fa-solid fa-user mr-2"></i> ສະຕ໋ອກ
               </li>
               <li
-                className={`py-2 px-4 cursor-pointer text-lg hover:bg-green-400 font-bold rounded-md ${
-                  activeMenu === "/pos" ? "bg-green-400" : ""
+                className={`py-2 px-4 cursor-pointer text-lg hover:bg-gray-200 hover:text-gray-800 font-bold rounded-md ${
+                  activeMenu === "/pos" ? "hover:bg-gray-200 hover:text-gray-800" : ""
                 }`}
                 onClick={() => handleMenuClick("/pos")}
               >
                 <i className="fa-solid fa-cart-shopping mr-2"></i> ຂາຍ pos
               </li>
               <li
-                className={`py-2 px-4 cursor-pointer text-lg hover:bg-green-400 font-bold rounded-md ${
-                  activeMenu === "/transection" ? "bg-green-400" : ""
+                className={`py-2 px-4 cursor-pointer text-lg hover:bg-gray-200 hover:text-gray-800 font-bold rounded-md ${
+                  activeMenu === "/transection" ? "hover:bg-gray-200 hover:text-gray-800" : ""
                 }`}
                 onClick={() => handleMenuClick("/transection")}
               >
                 <i className="fa-solid fa-layer-group mr"></i> ການເຄື່ອນໄຫວ
               </li>
               <li
-                className={`py-2 px-4 cursor-pointer text-lg hover:bg-green-400 font-bold rounded-md ${
-                  activeMenu === "/report" ? "bg-green-400" : ""
+                className={`py-2 px-4 cursor-pointer text-lg hover:bg-gray-200 hover:text-gray-800 font-bold rounded-md ${
+                  activeMenu === "/report" ? "hover:bg-gray-200 hover:text-gray-800" : ""
                 }`}
                 onClick={() => handleMenuClick("/report")}
               >

@@ -30,7 +30,7 @@ function Route(props) {
         <i className="fa-solid fa-bars text-red-50 text-md"></i>
       </button>
       <Sidebar openSidebar={isOpenSidebar} />
-      <div className={`md:fixed right-4 top-2 ${isOpenContent} bg-green-200 text-black rounded-lg h-[98%]`}>
+      <div className={`md:fixed right-4 top-2 ${isOpenContent} bg-gray-300 text-black rounded-lg h-[98%]`}>
         {props.children}
       </div>
     </div>
