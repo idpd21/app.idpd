@@ -8,7 +8,7 @@ function Home() {
             className="w-32 h-32" />
             <span className="mt-4 text-4xl">ຮ້ານຂາຍອຸປະກອນການຮຽນພັດທະນາລາວ</span>
         </div>
-        <div className="h=[90%] w=[90%] rounded-"> <img src="https://i.pinimg.com/originals/f1/2c/8d/f12c8df7accde83f5e4e04bbc194f90d.jpg" alt="" className="h-full w-full"/></div>
+        <div className="h=[90%] w=[90%] rounded-xl border-2 border-black"> <img src="https://i.pinimg.com/originals/f1/2c/8d/f12c8df7accde83f5e4e04bbc194f90d.jpg" alt="" className="h-full w-full"/></div>
        
       </div>
     </Route>

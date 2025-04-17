@@ -138,7 +138,7 @@ function Transection() {
           <div className="h-[70vh] overflow-auto text-white">
             <table className="w-full table-auto border-collapse">
               <thead>
-                <tr className="bg-green-700">
+                <tr className="bg-black text-orange-400">
                   <th className="border px-4 py-4">ວັນເດືອນປີ</th>
                   <th className="border px-4 py-4">ເນື້ອໃນລາຍການ</th>
                   <th className="border px-4 py-4">ຜູ້ເຮັດທຸລະກຳ</th>
@@ -149,7 +149,7 @@ function Transection() {
               <tbody>
                 {Transections.length > 0 ? (
                   Transections.map((item) => (
-                    <tr key={item.id} className="bg-green-500 hover:bg-gray-700">
+                    <tr key={item.id} className="bg-orange-400 hover:bg-gray-700">
                       <td className="border px-4 py-2 text-center">
                         {item.tran_type == "expense" ? (
                           <i className="fa-solid fa-arrow-left text-red-500 mr-2"></i>

@@ -265,6 +265,22 @@ function Report() {
           </div>
         </div>
         <div className="flex justify-between items-center">
+         
+          {/* ปุ่มส่งออก */}
+          <div className="flex pb-4">
+            <button
+              onClick={exportToExcel}
+              className="bg-green-500 text-white px-4 py-2 rounded-lg cursor-pointer mr-2"
+            >
+              ບັນທືກເປັນ Excel
+            </button>
+            <button
+              onClick={PrintReport}
+              className="bg-red-500 text-white px-4 py-2 rounded-lg cursor-pointer"
+            >
+              ພິມລາຍງານ
+            </button>
+          </div>
           <div className="relative pb-4">
             <button
               className={`py-2 px-2 cursor-pointer border border-r-0 my-2 rounded-l-md ${
@@ -303,44 +319,29 @@ function Report() {
               className={`py-2 px-4 cursor-pointer border my-2 rounded-md bg-gray-200 text-black`}
             />
           </div>
-          {/* ปุ่มส่งออก */}
-          <div className="flex pb-4">
-            <button
-              onClick={exportToExcel}
-              className="bg-green-500 text-white px-4 py-2 rounded-lg cursor-pointer mr-2"
-            >
-              ບັນທືກເປັນ Excel
-            </button>
-            <button
-              onClick={PrintReport}
-              className="bg-red-500 text-white px-4 py-2 rounded-lg cursor-pointer"
-            >
-              ພິມລາຍງານ
-            </button>
-          </div>
         </div>
 
         {/* ตารางรายงาน */}
         <div className="h-[55vh] overflow-auto pb-2">
-          <table className="table-auto w-full border-collapse border border-gray-300">
+          <table className="table-auto w-full border-collapse border border-orange-400">
             <thead>
-              <tr className="bg-gray-100">
-                <th className="border border-gray-300 px-4 py-2 text-center">
+              <tr className="bg-orange-300">
+                <th className="border border-orange-400 px-4 py-2 text-center">
                   ລຳດັບ
                 </th>
-                <th className="border border-gray-300 px-4 py-2 text-center">
+                <th className="border border-orange-400 px-4 py-2 text-center">
                   ວັນທີ
                 </th>
-                <th className="border border-gray-300 px-4 py-2 text-center">
+                <th className="border border-orange-400 px-4 py-2 text-center">
                   ພະນັກງານ
                 </th>
-                <th className="border border-gray-300 px-4 py-2 text-right">
+                <th className="border border-orange-400 px-4 py-2 text-right">
                   ຍອດຂາຍ
                 </th>
-                <th className="border border-gray-300 px-4 py-2 text-right">
+                <th className="border border-orange-400 px-4 py-2 text-right">
                   ລາຍຮັບ
                 </th>
-                <th className="border border-gray-300 px-4 py-2 text-right">
+                <th className="border border-orange-400 px-4 py-2 text-right">
                   ລາຍຈ່າຍ
                 </th>
               </tr>
