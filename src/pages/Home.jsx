@@ -2,8 +2,13 @@ import Route from "../components/Route";
 function Home() {
   return (
     <Route>
-      <div className=" text-white p-6 text-3xl h-screen">
-        <img src="https://c.pxhere.com/images/94/ab/6a52c065c68b09ab6229ef81a3c9-1445891.jpg!d" alt="" className="h-screen w-auto"/>
+      <div className="flex items-center justify-center">
+        <div>
+        <img src="https://png.pngtree.com/png-clipart/20240212/original/pngtree-design-of-a-plaited-hexagon-logo-in-blue-created-as-vector-png-image_14300843.png" alt=""
+            className="w-32 h-32" />
+            <span className="mt-4 text-4xl">ຮ້ານຂາຍອຸປະກອນການຮຽນພັດທະນາລາວ</span>
+        </div>
+        <img src="https://i.pinimg.com/originals/f1/2c/8d/f12c8df7accde83f5e4e04bbc194f90d.jpg" alt="" className="h-64 w-64"/>
       </div>
     </Route>
   );
