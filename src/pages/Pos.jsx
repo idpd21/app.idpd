@@ -11,7 +11,7 @@ export default function POS() {
   const [open, setOpen] = useState(false);
   const [paymentMethod, setPaymentMethod] = useState("cash");
   const [cash, setCash] = useState(0);
-  const [search, setSearch] = useState("")
+  const [search, setSearch] = useState("");
 
   // useEffect ຈະເຮັດວຽກເມືອໜ້າເວັບຖືກໂຫລດທຳອິດ
   useEffect(() => {
@@ -21,7 +21,9 @@ export default function POS() {
   // ດຶງຂໍ້ມູນຈາກຖານຂໍ້ມູນມາສະແດງ
   const fetchData = async () => {
     try {
-      const res = await axios.get(config.apiPath + `/api/product/list?search=${search}`);
+      const res = await axios.get(
+        config.apiPath + `/api/product/list?search=${search}`
+      );
       if (res.data.results) {
         setProducts(res.data.results);
       }
@@ -107,8 +109,6 @@ export default function POS() {
         user_id: localStorage.getItem("user_id"),
       });
       if (res.data.icon == "success") {
-
-
         // ສະແດງບິນ
         const bill_id = res.data.bill_id;
         const bill = await axios.get(
@@ -128,7 +128,9 @@ export default function POS() {
           <div>
             <h2 class="text-center">ໃບບິນຮັບເງິນ</h2>
             <h4>ພະນັກງານຂາຍ: ${cashier}</h4>
-            <h4>ວັນທີ: ${new Date().getDate()}/${new Date().getMonth() + 1}/${new Date().getFullYear()}</h4>
+            <h4>ວັນທີ: ${new Date().getDate()}/${
+          new Date().getMonth() + 1
+        }/${new Date().getFullYear()}</h4>
             <table>
               <thead>
                 <tr>
@@ -144,17 +146,29 @@ export default function POS() {
                     (item) => `
                       <tr>
                         <td>${item.name}</td>
-                        <td class="text-end">${item.price.toLocaleString("th-TH")}</td>
+                        <td class="text-end">${item.price.toLocaleString(
+                          "th-TH"
+                        )}</td>
                         <td class="text-center">${item.qty}</td>
-                        <td class="text-end">${item.total.toLocaleString("th-TH")}</td>
+                        <td class="text-end">${item.total.toLocaleString(
+                          "th-TH"
+                        )}</td>
                       </tr>`
                   )
                   .join("")}
               </tbody>
             </table>
             <h4>ລວມ: ${total.toLocaleString("th-TH")} ກີບ</h4>
-            <h4> ${cash > 0 ? 'ຈ່າຍເງິນສົດ: ' + cash.toLocaleString("th-TH") + ' ກີບ': 'ໂອນຈ່າຍ'} </h4>
-            <h4> ${cash > 0 ? 'ເງິນທອນ: ' + (cash - total).toLocaleString("th-TH") + ' ກີບ' : ''} </h4>
+            <h4> ${
+              cash > 0
+                ? "ຈ່າຍເງິນສົດ: " + cash.toLocaleString("th-TH") + " ກີບ"
+                : "ໂອນຈ່າຍ"
+            } </h4>
+            <h4> ${
+              cash > 0
+                ? "ເງິນທອນ: " + (cash - total).toLocaleString("th-TH") + " ກີບ"
+                : ""
+            } </h4>
             <p class="text-center"> ຂອບໃຈທີ່ໃຊ້ບໍລິການ </p>
 
           </div>`;
@@ -216,29 +230,44 @@ export default function POS() {
   };
 
   const handleSearch = async () => {
-    fetchData()
-  }
+    fetchData();
+  };
 
   return (
     <Route>
       <div className="p-4">
-        <h1 className="text-xl font-bold"> ໜ້າຂາຍສິນຄ້າ</h1>
-        <hr className="border border-green-700 w-full my-2" />
+        <h1 className="text-xl font-bold">
+          <div className="text-center flex text-2xl justify-center ">
+            <img
+              src="https://png.pngtree.com/png-clipart/20240212/original/pngtree-design-of-a-plaited-hexagon-logo-in-blue-created-as-vector-png-image_14300843.png"
+              alt=""
+              className="w-16 h-16"
+            />
+            <span className="mt-4 text-lg">ຮ້ານຂາຍອຸປະກອນການຮຽນພັດທະນາລາວ</span>
+          </div>
+        </h1>
+        <hr className="border border-orange-400 w-full my-2" />
 
         <div className="grid grid-cols-3 gap-4">
           <div className="col-span-2">
             <h2 className="text-lg font-semibold my-4 relative">
-              <input type="text" className="py-3 px-4 border-2 w-full rounded-full " placeholder="ຄົ້ນຫາສິນຄ້າ....." 
-              onChange={(e) => setSearch(e.target.value)}
+              <input
+                type="text"
+                className="py-3 px-4 border-2 w-full rounded-full "
+                placeholder="ຄົ້ນຫາສິນຄ້າ....."
+                onChange={(e) => setSearch(e.target.value)}
               />
-             <i className="fa-solid fa-magnifying-glass absolute right-8 top-4 text-2xl cursor-pointer hover:text-pink-500" onClick={handleSearch}></i>
+              <i
+                className="fa-solid fa-magnifying-glass absolute right-8 top-4 text-2xl cursor-pointer hover:text-pink-500"
+                onClick={handleSearch}
+              ></i>
             </h2>
             <div className="grid grid-cols-4 gap-4 h-[74vh] overflow-auto">
               {products.length > 0 ? (
                 products.map((item) => (
                   <div
                     key={item.id}
-                    className="relative shadow-lg rounded-lg p-4 bg-white cursor-pointer hover:shadow-xl hover:shadow-black transition duration-300"
+                    className="relative shadow-lg rounded-lg p-4 bg-black cursor-pointer hover:shadow-xl hover:shadow-black transition duration-300"
                     onClick={() => addToCart(item)} // ສິນຄ້າທີ່ເພີ່ມໃນລາຍການ
                   >
                     {/* ສະແດງຈຳນວນທີ່ເລືອກ */}
@@ -271,8 +300,8 @@ export default function POS() {
             </div>
           </div>
           <div>
-            <h2 className="text-lg font-semibold mb-2">ລາຍການສິນຄ້າ</h2>
-            <div className="bg-green-400 rounded-lg p-4 h-[74vh] overflow-auto shadow-2xl text-white">
+            <h2 className="text-lg font-semibold mb-2">ສິນຄ້າທີ່ທ່ານເລືອກ</h2>
+            <div className="bg-black rounded-lg p-4 h-[74vh] overflow-auto shadow-2xl text-white">
               <h2 className="text-lg font-semibold mb-2 flex items-center">
                 🛒 ລາຍການສັ່ງຊື້
               </h2>
@@ -323,7 +352,7 @@ export default function POS() {
                   <span>{total.toLocaleString("th-TH")} ກີບ</span>
                 </div>
                 <button
-                  className="mt-4 w-full bg-green-800 text-white py-2 rounded-lg cursor-pointer"
+                  className="mt-4 w-full bg-orange-400 text-white py-2 rounded-lg cursor-pointer"
                   disabled={cart.length === 0}
                   onClick={() => setOpen(true)}
                 >
@@ -335,7 +364,7 @@ export default function POS() {
         </div>
         {/* Modal for Payment */}
         {open && (
-          <div className="fixed inset-0 bg-green-200 flex justify-center items-center">
+          <div className="fixed inset-0 bg-black flex justify-center items-center">
             <div className="bg-white p-6 rounded-lg shadow-lg w-96 relative">
               <button
                 className="absolute right-2 top-0 text-lg text-red-300 hover:text-red-500 p-2 cursor-pointer"
@@ -379,7 +408,7 @@ export default function POS() {
                     onChange={(e) => setCash(e.target.value)}
                   />
                   {change > 0 && (
-                    <p className="text-green-600 font-bold mt-2">
+                    <p className="text-orange-400 font-bold mt-2">
                       ເງິນທອນ: {change.toLocaleString("th-TH")} ກີບ
                     </p>
                   )}
@@ -392,7 +421,7 @@ export default function POS() {
                 />
               )}
               <button
-                className="mt-4 w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 cursor-pointer"
+                className="mt-4 w-full bg-orange-400 text-white py-2 rounded-lg hover:bg-orange-700 cursor-pointer"
                 disabled={
                   paymentMethod === "cash" && (cash <= 0 || cash < total)
                 }
