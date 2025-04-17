@@ -212,8 +212,12 @@ function Store() {
   return (
     <Route>
       <div className="p-4">
-        <div className="text-3xl"> hello Store</div>
-        <hr className="border border-green-700 w-full my-2" />
+        <div className="text-3xl"> <div className="text-center flex text-2xl justify-center ">
+            <img src="https://png.pngtree.com/png-clipart/20240212/original/pngtree-design-of-a-plaited-hexagon-logo-in-blue-created-as-vector-png-image_14300843.png" alt=""
+            className="w-16 h-16" />
+            <span className="mt-4 text-lg">ຮ້ານຂາຍອຸປະກອນການຮຽນພັດທະນາລາວ</span>
+          </div></div>
+        <hr className="border border-orange-400 w-full my-2" />
 
         {/* ປຸ່ມ */}
         <div className="text-end">
@@ -367,9 +371,9 @@ function Store() {
         {/* ຕາຕະລາງ */}
         {!showForm && (
           <div className="h-[70vh] overflow-auto">
-            <table className="w-full border-4 border-green-700">
+            <table className="w-full border-4 border-orange-400">
               <thead>
-                <tr className="bg-green-700 text-white border border-white">
+                <tr className="bg-orange-400 text-white border-2  border-white">
                   <th className="py-2 px-4 border border-white">ຮູບພາບ</th>
                   <th className="py-2 px-4 border border-white">ຊື່ສິນຄ້າ</th>
                   <th className="py-2 px-4 border border-white">ຈຳນວນ</th>
