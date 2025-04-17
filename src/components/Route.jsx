@@ -22,7 +22,7 @@ function Route(props) {
     }
   };
   return (
-    <div className="bg-gray-100 text-white h-screen relative">
+    <div className="bg-black text-white h-screen relative">
       <button
         className={`absolute ${isOpenButton} top-0 bg-black py-1 px-2 cursor-pointer z-50`}
         onClick={handleSidebarMode}
@@ -30,7 +30,7 @@ function Route(props) {
         <i className="fa-solid fa-bars text-red-50 text-md"></i>
       </button>
       <Sidebar openSidebar={isOpenSidebar} />
-      <div className={`md:fixed right-4 top-2 ${isOpenContent} bg-gray-300 text-black rounded-lg h-[98%]`}>
+      <div className={`md:fixed right-4 top-2 ${isOpenContent} bg-white text-black rounded-lg h-[98%]`}>
         {props.children}
       </div>
     </div>
