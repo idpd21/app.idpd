@@ -287,7 +287,7 @@ export default function POS() {
                       className="w-full h-32 object-cover rounded-lg mb-2"
                     />
                     <h3 className="text-lg font-semibold">{item.name}</h3>
-                    <p className="text-gray-600 text-end">
+                    <p className="text-orange-400 text-end">
                       ລາຄາ: {item.price_sell.toLocaleString("th-TH")} ກີບ
                     </p>
                   </div>
