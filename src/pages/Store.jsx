@@ -20,7 +20,7 @@ function Store() {
   // ສ່ວນຕົວແປຮູບພາບ
   const [image, setImage] = useState(null);
   const [preview, setPreview] = useState(
-    "https://cdn-icons-png.flaticon.com/512/259/259987.png"
+    "https://cdn-icons-png.flaticon.com/512/6769/6769587.png"
   );
   const [loading, setLoading] = useState(false);
 
