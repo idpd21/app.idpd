@@ -73,7 +73,7 @@ function Transection() {
     <Route>
     
         <div className="px-6 pt-6 pb-10 relative">
-          <div className="text-2xl mb-4">ການເຄື່ອນໄຫວທຸລະກຳ</div>{" "}
+          <div className="text-2xl mb-4 font-bold">ການເຄື່ອນໄຫວທຸລະກຳ</div>{" "}
           <hr className="my-2" />
           <div className="flex justify-between items-center">
             <div>
