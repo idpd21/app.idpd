@@ -8,7 +8,7 @@ function Home() {
             className="w-32 h-32" />
             <span className="mt-4 text-4xl">ຮ້ານຂາຍອຸປະກອນການຮຽນພັດທະນາລາວ</span>
         </div>
-        <div className="h=[90%] w=[90%]  border-2 border-black"> <img src="https://i.pinimg.com/originals/f1/2c/8d/f12c8df7accde83f5e4e04bbc194f90d.jpg" alt="" className="h-full w-full"/></div>
+        <div className="h=[90%] w=[90%]  border-2 border-black"> <img src="https://th.bing.com/th/id/R.c1624ded9f07e1bbc85ee91888b037ba?rik=F7uQOpxK36MxDw&riu=http%3a%2f%2fkiji.life%2fnewkiji%2fwp-content%2fuploads%2f2017%2f07%2fDSC_9452-1024x681.jpg&ehk=P65DhnyDEOIjNDG%2fFzVuOpg6%2fKz8TlcOp3h%2fuBnveLc%3d&risl=&pid=ImgRaw&r=0" alt="" className="h-full w-full"/></div>
        
       </div>
     </Route>
