@@ -217,7 +217,7 @@ function Store() {
         <div className="text-3xl"> <div className="text-center flex text-2xl justify-center ">
             <img src="https://png.pngtree.com/png-clipart/20240212/original/pngtree-design-of-a-plaited-hexagon-logo-in-blue-created-as-vector-png-image_14300843.png" alt=""
             className="w-16 h-16" />
-            <span className="mt-4 text-lg">ຮ້ານຂາຍອຸປະກອນການຮຽນພັດທະນາລາວ</span>
+            <span className="mt-4 text-lg font-bold">ຮ້ານຂາຍອຸປະກອນການຮຽນພັດທະນາລາວ</span>
           </div></div>
         <hr className="border border-orange-400 w-full my-2" />
 

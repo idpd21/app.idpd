@@ -58,7 +58,7 @@ function Sidebar({ openSidebar }) {
         <div className="bg-gradient-to-b from-black to-black text-white p-6 h-full w-60 z-50">
           <div className="bg-orange-400 w-full h-12 rounded-md flex justify-center items-center mt-4">
             <div>
-              <i className="fa-solid fa-user text-3xl text-gray-200"></i>
+              <i className="fa-solid fa-circle-user text-xl text-gray-200"></i>
             </div>
             <div>
               <p className="text-2xl text-gray-200 font-bold px-2">{user.username}</p>
