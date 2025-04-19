@@ -118,7 +118,7 @@ function Sidebar({ openSidebar }) {
           <div>
           <button
               onClick={handleLogout}
-              className="bg-red-500 text-white  px-4 py-2 rounded-md hover:bg-red-100 hover:text-black cursor-pointer mt-96"
+              className="bg-red-500 text-white  px-4 py-2 rounded-md hover:bg-red-100 hover:text-black cursor-pointer"
             >
               <i className="fa-solid fa-right-to-bracket mr-2 font-bold"></i> ອອກຈາກລະບົບ
             </button>
