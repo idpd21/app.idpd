@@ -115,10 +115,10 @@ function Sidebar({ openSidebar }) {
               </li>
             </ul>
           </div>
-          <div className="flex items-center justify-center mt-48">
+          <div className="flex items-center justify-center">
           <button
               onClick={handleLogout}
-              className="bg-red-500 text-white  px-4 py-2 rounded-md hover:bg-red-100 hover:text-black cursor-pointer "
+              className="bg-red-500 text-white  px-4 py-2 rounded-md hover:bg-red-100 hover:text-black cursor-pointer mt-48 "
             >
               <i className="fa-solid fa-right-to-bracket mr-2 font-bold"></i> ອອກຈາກລະບົບ
             </button>
