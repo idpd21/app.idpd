@@ -58,6 +58,7 @@ function Store() {
           price_buy: Product.price_buy,
           price_sell: Product.price_sell,
           image: url,
+          user_id: localStorage.getItem("user_id")
         });
       } else {
         res = await axios.put(
@@ -69,6 +70,7 @@ function Store() {
             price_buy: Product.price_buy,
             price_sell: Product.price_sell,
             image: url,
+            user_id: localStorage.getItem("user_id")
           }
         );
       }
